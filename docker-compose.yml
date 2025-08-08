@@ -1,0 +1,25 @@
+services:
+  save-matches-uuid:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      REDIS_SERVER: ${REDIS_SERVER} # Carregado do .env
+      REDIS_PASSWORD: ${REDIS_PASSWORD} # Carregado do .env
+      REDIS_PORT: ${REDIS_PORT} # Carregado do .env
+      API_SECRET_KEY: ${API_SECRET_KEY} # Carregado do .env
+    networks:
+      - minha-rede
+    ports:
+      - "8890:8890"
+    volumes:
+      - ./app:/app
+      - ./log:/log
+    restart: unless-stopped
+
+networks:
+  minha-rede:
+    external: true
+
+#docker network create minha-rede
+#docker network connect minha-rede landf_infra_redis-redis-1

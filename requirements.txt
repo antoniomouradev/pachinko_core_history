@@ -1,0 +1,6 @@
+tornado
+redis
+colorlog
+requests
+python-dotenv
+nuitka
