@@ -1,4 +1,6 @@
 
+# VERSÃO OBSOLETA --- APENAS REFERENCIAS HISTÓRICAS
+
 # Documentação do Projeto: Armazenamento de Payload com Tornado + Redis
 
 **Versão gerada em:** 08/08/2025 20:06:40
