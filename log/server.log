@@ -180,3 +180,216 @@
 2025-08-15 10:31:36,270 [INFO] (redis_connection_async.py:start:38): [Redis] Connected to landf_infra_redis_redis_1:36380, db=0
 2025-08-15 10:31:36,273 [INFO] (app.py:<module>:247): Autoreload enabled (dev mode).
 2025-08-15 10:31:36,273 [INFO] (app.py:<module>:250): Server started version 3
+2025-08-15 17:27:14,652 [WARNING] (web.py:log_request:2407): 404 GET / (111.113.89.128) 2.47ms
+2025-08-15 17:27:20,710 [WARNING] (web.py:log_request:2407): 404 GET / (218.64.60.237) 0.78ms
+2025-08-16 08:19:30,461 [WARNING] (web.py:log_request:2407): 404 GET / (162.216.150.24) 2.21ms
+2025-08-16 14:35:36,172 [WARNING] (web.py:log_request:2407): 404 GET / (162.216.150.3) 2.61ms
+2025-08-17 00:22:01,486 [WARNING] (web.py:log_request:2407): 404 GET / (35.203.210.246) 2.43ms
+2025-08-17 11:54:32,320 [WARNING] (web.py:log_request:2407): 404 GET / (162.216.149.50) 2.21ms
+2025-08-17 12:07:27,964 [WARNING] (web.py:log_request:2407): 404 GET / (207.90.244.12) 2.08ms
+2025-08-17 12:07:28,432 [WARNING] (web.py:log_request:2407): 404 GET /favicon.ico (207.90.244.12) 0.66ms
+2025-08-18 01:51:26,195 [WARNING] (web.py:log_request:2407): 404 GET / (147.185.133.248) 2.08ms
+2025-08-18 07:02:29,855 [WARNING] (web.py:log_request:2407): 404 GET / (35.195.234.83) 2.42ms
+2025-08-19 01:00:22,943 [WARNING] (web.py:log_request:2407): 404 GET / (91.196.152.220) 2.81ms
+2025-08-19 01:08:48,671 [WARNING] (web.py:log_request:2407): 404 GET /favicon.ico (91.196.152.106) 2.64ms
+2025-08-19 01:11:28,375 [WARNING] (web.py:log_request:2407): 404 GET / (35.203.211.125) 8.43ms
+2025-08-19 11:31:47,039 [WARNING] (web.py:log_request:2407): 404 GET / (106.75.86.15) 11.90ms
+2025-08-19 11:36:08,986 [WARNING] (web.py:log_request:2407): 404 GET / (106.75.164.139) 3.13ms
+2025-08-19 11:36:09,840 [WARNING] (web.py:log_request:2407): 404 GET /favicon.ico (106.75.164.139) 3.77ms
+2025-08-19 11:38:42,213 [WARNING] (web.py:log_request:2407): 404 GET / (223.89.215.235) 2.51ms
+2025-08-19 13:03:01,730 [WARNING] (web.py:log_request:2407): 404 GET / (147.185.132.143) 2.92ms
+2025-08-20 08:18:05,639 [WARNING] (web.py:log_request:2407): 404 GET / (47.88.28.203) 12.04ms
+2025-08-20 08:18:28,648 [WARNING] (web.py:log_request:2407): 404 GET / (123.160.223.73) 1.02ms
+2025-08-20 23:59:11,827 [WARNING] (web.py:log_request:2407): 404 GET / (162.216.149.31) 14.34ms
+2025-08-22 01:16:29,209 [WARNING] (web.py:log_request:2407): 404 GET / (162.216.150.47) 17.50ms
+2025-08-22 02:05:17,368 [WARNING] (web.py:log_request:2407): 404 GET / (91.196.152.223) 11.71ms
+2025-08-22 02:17:08,247 [WARNING] (web.py:log_request:2407): 404 GET /favicon.ico (91.196.152.213) 3.16ms
+2025-08-22 15:01:01,784 [INFO] (autoreload.py:_check_file:197): /app/app.py modified; restarting server
+2025-08-22 15:01:04,208 [INFO] (redis_connection_async.py:start:38): [Redis] Connected to landf_infra_redis_redis_1:36380, db=0
+2025-08-22 15:01:04,214 [INFO] (app.py:<module>:243): Autoreload enabled (dev mode).
+2025-08-22 15:01:04,215 [INFO] (app.py:<module>:246): Server started version 4
+2025-08-22 15:01:33,173 [WARNING] (web.py:log_request:2407): 400 POST /records (172.20.0.20) 3.66ms
+2025-08-22 15:01:33,175 [WARNING] (web.py:log_request:2407): 400 POST /records (172.20.0.20) 3.42ms
+2025-08-22 15:01:42,773 [DEBUG] (app.py:post:77): RecordHandler POST body: zapzap
+2025-08-22 15:01:45,125 [DEBUG] (app.py:post:77): RecordHandler POST body: zapzap
+2025-08-22 15:01:50,353 [WARNING] (web.py:log_request:2407): 400 POST /records (172.20.0.20) 2.24ms
+2025-08-22 15:01:50,354 [WARNING] (web.py:log_request:2407): 400 POST /records (172.20.0.20) 1.32ms
+2025-08-22 15:02:41,030 [DEBUG] (app.py:post:77): RecordHandler POST body: fruits
+2025-08-22 15:02:42,383 [DEBUG] (app.py:post:77): RecordHandler POST body: fruits
+2025-08-22 15:02:48,737 [WARNING] (web.py:log_request:2407): 400 POST /records (172.20.0.15) 0.77ms
+2025-08-22 15:02:48,739 [WARNING] (web.py:log_request:2407): 400 POST /records (172.20.0.15) 0.66ms
+2025-08-22 15:02:57,918 [WARNING] (web.py:log_request:2407): 400 POST /records (172.20.0.15) 0.84ms
+2025-08-22 15:09:38,201 [DEBUG] (app.py:post:77): RecordHandler POST body: fruits
+2025-08-22 15:09:40,980 [DEBUG] (app.py:post:77): RecordHandler POST body: fruits
+2025-08-22 15:09:46,133 [WARNING] (web.py:log_request:2407): 400 POST /records (172.20.0.28) 1.45ms
+2025-08-22 15:09:46,133 [WARNING] (web.py:log_request:2407): 400 POST /records (172.20.0.28) 1.81ms
+2025-08-22 15:10:38,238 [DEBUG] (app.py:post:77): RecordHandler POST body: copa94
+2025-08-22 15:10:42,537 [DEBUG] (app.py:post:77): RecordHandler POST body: copa94
+2025-08-22 15:10:48,009 [WARNING] (web.py:log_request:2407): 400 POST /records (172.20.0.26) 8.21ms
+2025-08-22 15:10:48,011 [WARNING] (web.py:log_request:2407): 400 POST /records (172.20.0.26) 8.99ms
+2025-08-22 15:13:26,497 [INFO] (redis_connection_async.py:start:38): [Redis] Connected to landf_infra_redis_redis_1:36380, db=0
+2025-08-22 15:13:26,503 [INFO] (app.py:<module>:243): Autoreload enabled (dev mode).
+2025-08-22 15:13:26,503 [INFO] (app.py:<module>:246): Server started version 4
+2025-08-22 15:13:33,434 [WARNING] (web.py:log_request:2407): 400 POST /records (172.20.0.26) 2.00ms
+2025-08-22 15:13:33,435 [WARNING] (web.py:log_request:2407): 400 POST /records (172.20.0.26) 1.85ms
+2025-08-22 15:18:31,423 [DEBUG] (app.py:post:77): RecordHandler POST body: copa94
+2025-08-22 15:18:37,136 [WARNING] (web.py:log_request:2407): 400 POST /records (172.20.0.26) 1.32ms
+2025-08-22 15:18:37,286 [WARNING] (web.py:log_request:2407): 400 POST /records (172.20.0.26) 0.74ms
+2025-08-22 15:18:46,871 [WARNING] (web.py:log_request:2407): 400 POST /records (172.20.0.26) 0.85ms
+2025-08-22 15:19:39,955 [WARNING] (web.py:log_request:2407): 400 POST /records (172.20.0.26) 6.13ms
+2025-08-22 15:19:47,511 [WARNING] (web.py:log_request:2407): 400 POST /records (172.20.0.26) 0.80ms
+2025-08-22 15:19:47,565 [WARNING] (web.py:log_request:2407): 400 POST /records (172.20.0.26) 15.81ms
+2025-08-22 15:20:29,593 [DEBUG] (app.py:post:77): RecordHandler POST body: fruits
+2025-08-22 15:20:32,195 [DEBUG] (app.py:post:77): RecordHandler POST body: fruits
+2025-08-22 15:20:47,662 [DEBUG] (app.py:post:77): RecordHandler POST body: fruits
+2025-08-22 15:20:55,496 [WARNING] (web.py:log_request:2407): 400 POST /records (172.20.0.28) 16.80ms
+2025-08-22 15:20:55,496 [WARNING] (web.py:log_request:2407): 400 POST /records (172.20.0.28) 17.05ms
+2025-08-22 15:21:01,322 [WARNING] (web.py:log_request:2407): 400 POST /records (172.20.0.28) 1.47ms
+2025-08-22 15:21:01,324 [WARNING] (web.py:log_request:2407): 400 POST /records (172.20.0.28) 0.47ms
+2025-08-22 15:26:05,006 [INFO] (autoreload.py:_check_file:197): /app/app.py modified; restarting server
+2025-08-22 15:26:06,963 [INFO] (redis_connection_async.py:start:38): [Redis] Connected to landf_infra_redis_redis_1:36380, db=0
+2025-08-22 15:26:06,965 [INFO] (app.py:<module>:243): Autoreload enabled (dev mode).
+2025-08-22 15:26:06,966 [INFO] (app.py:<module>:246): Server started version 4a
+2025-08-22 15:26:19,610 [DEBUG] (app.py:post:77): RecordHandler POST body: fruits
+2025-08-22 15:26:27,335 [WARNING] (web.py:log_request:2407): 400 POST /records (172.20.0.28) 1.26ms
+2025-08-22 15:26:27,337 [WARNING] (web.py:log_request:2407): 400 POST /records (172.20.0.28) 1.87ms
+2025-08-22 15:28:47,158 [WARNING] (web.py:log_request:2407): 401 POST /records (172.20.0.1) 2.22ms
+2025-08-22 15:38:01,968 [INFO] (autoreload.py:_check_file:197): /app/app.py modified; restarting server
+2025-08-22 15:38:02,406 [INFO] (redis_connection_async.py:start:38): [Redis] Connected to landf_infra_redis_redis_1:36380, db=0
+2025-08-22 15:38:02,408 [INFO] (app.py:<module>:258): Autoreload enabled (dev mode).
+2025-08-22 15:38:02,408 [INFO] (app.py:<module>:261): Server started version 4b
+2025-08-22 15:38:15,224 [DEBUG] (app.py:post:172): POST /records from 172.20.0.28 headers={'Content-Type': 'application/json', 'X-API-KEY': 'API0v8RZvgJI0X3rGvE4XelxI4NwLkygqFxjPCyqMea6udsgdksdsdv8VR1jpFFj9jDfSsOdn1kLBAsQXa6g5Gk7UcpA'} body=b'{"user_id":"cleyton","game":"","limit":10,"offset":0}'
+2025-08-22 15:38:15,224 [WARNING] (app.py:post:185): Validation error on /records: Missing or invalid 'game'.
+2025-08-22 15:38:15,229 [WARNING] (app.py:_log_request:206): 400 POST /records (172.20.0.28) 6.11ms; reason=Bad Request
+2025-08-22 15:44:36,911 [INFO] (autoreload.py:_check_file:197): /app/app.py modified; restarting server
+2025-08-22 15:44:37,364 [INFO] (redis_connection_async.py:start:38): [Redis] Connected to landf_infra_redis_redis_1:36380, db=0
+2025-08-22 15:44:37,366 [INFO] (app.py:<module>:257): Autoreload enabled (dev mode).
+2025-08-22 15:44:37,367 [INFO] (app.py:<module>:260): Server started version 4c
+2025-08-22 15:44:45,288 [DEBUG] (app.py:post:172): POST /records from 172.20.0.28 body=b'{"user_id":"cleyton","game":"","limit":10,"offset":0}'
+2025-08-22 15:44:45,288 [WARNING] (app.py:post:184): Validation error on /records: Missing or invalid 'game'.
+2025-08-22 15:44:45,289 [WARNING] (app.py:_log_request:205): 400 POST /records (172.20.0.28) 1.79ms; reason=Bad Request
+2025-08-22 15:46:23,404 [DEBUG] (app.py:post:172): POST /records from 172.20.0.28 body=b'{"user_id":"cleyton","game":"","limit":10,"offset":0}'
+2025-08-22 15:46:23,406 [WARNING] (app.py:post:184): Validation error on /records: Missing or invalid 'game'.
+2025-08-22 15:46:23,407 [WARNING] (app.py:_log_request:205): 400 POST /records (172.20.0.28) 5.60ms; reason=Bad Request
+2025-08-22 15:46:58,656 [DEBUG] (app.py:post:172): POST /records from 172.20.0.27 body=b'{"user_id":"cleyton","game":"","limit":10,"offset":0}'
+2025-08-22 15:46:58,657 [WARNING] (app.py:post:184): Validation error on /records: Missing or invalid 'game'.
+2025-08-22 15:46:58,657 [WARNING] (app.py:_log_request:205): 400 POST /records (172.20.0.27) 1.41ms; reason=Bad Request
+2025-08-22 15:46:58,804 [DEBUG] (app.py:post:172): POST /records from 172.20.0.27 body=b'{"user_id":"cleyton","game":"","limit":10,"offset":0}'
+2025-08-22 15:46:58,804 [WARNING] (app.py:post:184): Validation error on /records: Missing or invalid 'game'.
+2025-08-22 15:46:58,805 [WARNING] (app.py:_log_request:205): 400 POST /records (172.20.0.27) 1.40ms; reason=Bad Request
+2025-08-22 15:47:10,926 [DEBUG] (app.py:post:69): RecordHandler POST body: zapzap
+2025-08-22 15:47:10,933 [INFO] (app.py:_log_request:208): 200 POST /record (172.20.0.27) 7.54ms
+2025-08-22 15:47:19,886 [DEBUG] (app.py:post:69): RecordHandler POST body: zapzap
+2025-08-22 15:47:19,888 [INFO] (app.py:_log_request:208): 200 POST /record (172.20.0.27) 2.69ms
+2025-08-22 15:47:31,927 [DEBUG] (app.py:post:172): POST /records from 172.20.0.27 body=b'{"user_id":"cleyton","game":"","limit":10,"offset":0}'
+2025-08-22 15:47:31,928 [WARNING] (app.py:post:184): Validation error on /records: Missing or invalid 'game'.
+2025-08-22 15:47:31,931 [WARNING] (app.py:_log_request:205): 400 POST /records (172.20.0.27) 4.54ms; reason=Bad Request
+2025-08-22 15:47:31,997 [DEBUG] (app.py:post:172): POST /records from 172.20.0.27 body=b'{"user_id":"cleyton","game":"","limit":10,"offset":0}'
+2025-08-22 15:47:31,998 [WARNING] (app.py:post:184): Validation error on /records: Missing or invalid 'game'.
+2025-08-22 15:47:31,998 [WARNING] (app.py:_log_request:205): 400 POST /records (172.20.0.27) 1.33ms; reason=Bad Request
+2025-08-22 15:49:45,654 [DEBUG] (app.py:post:172): POST /records from 172.20.0.27 body=b'{"user_id":"cleyton","game":"","limit":10,"offset":0}'
+2025-08-22 15:49:45,656 [WARNING] (app.py:post:184): Validation error on /records: Missing or invalid 'game'.
+2025-08-22 15:49:45,657 [WARNING] (app.py:_log_request:205): 400 POST /records (172.20.0.27) 5.56ms; reason=Bad Request
+2025-08-22 15:52:33,022 [DEBUG] (app.py:post:172): POST /records from 172.20.0.27 body=b'{"user_id":"cleyton","game":"","limit":10,"offset":0}'
+2025-08-22 15:52:33,024 [WARNING] (app.py:post:184): Validation error on /records: Missing or invalid 'game'.
+2025-08-22 15:52:33,025 [WARNING] (app.py:_log_request:205): 400 POST /records (172.20.0.27) 7.20ms; reason=Bad Request
+2025-08-22 15:57:18,892 [DEBUG] (app.py:post:172): POST /records from 172.20.0.27 body=b'{"user_id":"cleyton","game":"","limit":10,"offset":0}'
+2025-08-22 15:57:18,893 [WARNING] (app.py:post:184): Validation error on /records: Missing or invalid 'game'.
+2025-08-22 15:57:18,894 [WARNING] (app.py:_log_request:205): 400 POST /records (172.20.0.27) 5.48ms; reason=Bad Request
+2025-08-22 15:57:20,396 [DEBUG] (app.py:post:172): POST /records from 172.20.0.27 body=b'{"user_id":"cleyton","game":"","limit":10,"offset":0}'
+2025-08-22 15:57:20,398 [WARNING] (app.py:post:184): Validation error on /records: Missing or invalid 'game'.
+2025-08-22 15:57:20,403 [WARNING] (app.py:_log_request:205): 400 POST /records (172.20.0.27) 10.02ms; reason=Bad Request
+2025-08-22 15:57:38,952 [DEBUG] (app.py:post:69): RecordHandler POST body: zapzap
+2025-08-22 15:57:38,957 [INFO] (app.py:_log_request:208): 200 POST /record (172.20.0.27) 6.07ms
+2025-08-22 15:57:44,785 [DEBUG] (app.py:post:172): POST /records from 172.20.0.27 body=b'{"user_id":"cleyton","game":"zapzap","limit":10,"offset":0}'
+2025-08-22 15:57:44,791 [INFO] (app.py:_log_request:208): 200 POST /records (172.20.0.27) 6.06ms
+2025-08-22 15:57:44,952 [DEBUG] (app.py:post:172): POST /records from 172.20.0.27 body=b'{"user_id":"cleyton","game":"zapzap","limit":10,"offset":0}'
+2025-08-22 15:57:44,958 [INFO] (app.py:_log_request:208): 200 POST /records (172.20.0.27) 6.81ms
+2025-08-22 15:58:04,808 [DEBUG] (app.py:post:172): POST /records from 172.20.0.26 body=b'{"user_id":"cleyton","game":"copa94","limit":10,"offset":0}'
+2025-08-22 15:58:04,810 [DEBUG] (app.py:post:172): POST /records from 172.20.0.26 body=b'{"user_id":"cleyton","game":"copa94","limit":10,"offset":0}'
+2025-08-22 15:58:04,819 [INFO] (app.py:_log_request:208): 200 POST /records (172.20.0.26) 11.58ms
+2025-08-22 15:58:04,820 [INFO] (app.py:_log_request:208): 200 POST /records (172.20.0.26) 10.20ms
+2025-08-22 15:58:09,816 [DEBUG] (app.py:post:172): POST /records from 172.20.0.26 body=b'{"user_id":"cleyton","game":"copa94","limit":10,"offset":0}'
+2025-08-22 15:58:09,822 [INFO] (app.py:_log_request:208): 200 POST /records (172.20.0.26) 6.84ms
+2025-08-22 15:58:11,121 [DEBUG] (app.py:post:172): POST /records from 172.20.0.26 body=b'{"user_id":"cleyton","game":"copa94","limit":10,"offset":0}'
+2025-08-22 15:58:11,125 [INFO] (app.py:_log_request:208): 200 POST /records (172.20.0.26) 5.91ms
+2025-08-22 15:58:13,899 [DEBUG] (app.py:post:69): RecordHandler POST body: copa94
+2025-08-22 15:58:13,901 [INFO] (app.py:_log_request:208): 200 POST /record (172.20.0.26) 2.09ms
+2025-08-22 15:58:16,232 [DEBUG] (app.py:post:69): RecordHandler POST body: copa94
+2025-08-22 15:58:16,235 [INFO] (app.py:_log_request:208): 200 POST /record (172.20.0.26) 2.90ms
+2025-08-22 15:58:39,532 [DEBUG] (app.py:post:69): RecordHandler POST body: copa94
+2025-08-22 15:58:39,539 [INFO] (app.py:_log_request:208): 200 POST /record (172.20.0.26) 9.21ms
+2025-08-22 15:59:12,854 [DEBUG] (app.py:post:69): RecordHandler POST body: copa94
+2025-08-22 15:59:12,877 [INFO] (app.py:_log_request:208): 200 POST /record (172.20.0.26) 25.04ms
+2025-08-22 16:03:03,280 [DEBUG] (app.py:post:69): RecordHandler POST body: copa94
+2025-08-22 16:03:03,292 [INFO] (app.py:_log_request:208): 200 POST /record (172.20.0.26) 15.73ms
+2025-08-22 16:03:26,572 [DEBUG] (app.py:post:69): RecordHandler POST body: zapzap
+2025-08-22 16:03:26,575 [INFO] (app.py:_log_request:208): 200 POST /record (172.20.0.27) 3.56ms
+2025-08-22 16:03:30,301 [DEBUG] (app.py:post:69): RecordHandler POST body: zapzap
+2025-08-22 16:03:30,302 [INFO] (app.py:_log_request:208): 200 POST /record (172.20.0.27) 2.09ms
+2025-08-22 16:03:46,001 [DEBUG] (app.py:post:69): RecordHandler POST body: fruits
+2025-08-22 16:03:46,005 [INFO] (app.py:_log_request:208): 200 POST /record (172.20.0.28) 4.69ms
+2025-08-22 16:03:48,237 [DEBUG] (app.py:post:69): RecordHandler POST body: fruits
+2025-08-22 16:03:48,240 [INFO] (app.py:_log_request:208): 200 POST /record (172.20.0.28) 3.24ms
+2025-08-22 16:17:18,031 [DEBUG] (app.py:post:69): RecordHandler POST body: zapzap
+2025-08-22 16:17:18,038 [INFO] (app.py:_log_request:208): 200 POST /record (172.20.0.27) 9.67ms
+2025-08-22 16:17:19,286 [DEBUG] (app.py:post:69): RecordHandler POST body: zapzap
+2025-08-22 16:17:19,288 [INFO] (app.py:_log_request:208): 200 POST /record (172.20.0.27) 2.29ms
+2025-08-22 16:17:20,447 [DEBUG] (app.py:post:69): RecordHandler POST body: zapzap
+2025-08-22 16:17:20,449 [INFO] (app.py:_log_request:208): 200 POST /record (172.20.0.27) 2.66ms
+2025-08-22 16:17:21,711 [DEBUG] (app.py:post:69): RecordHandler POST body: zapzap
+2025-08-22 16:17:21,713 [INFO] (app.py:_log_request:208): 200 POST /record (172.20.0.27) 2.66ms
+2025-08-22 16:17:26,833 [DEBUG] (app.py:post:172): POST /records from 172.20.0.27 body=b'{"user_id":"cleyton","game":"zapzap","limit":10,"offset":0}'
+2025-08-22 16:17:26,834 [DEBUG] (app.py:post:172): POST /records from 172.20.0.27 body=b'{"user_id":"cleyton","game":"zapzap","limit":10,"offset":0}'
+2025-08-22 16:17:26,844 [INFO] (app.py:_log_request:208): 200 POST /records (172.20.0.27) 11.15ms
+2025-08-22 16:17:26,850 [INFO] (app.py:_log_request:208): 200 POST /records (172.20.0.27) 17.36ms
+2025-08-22 16:18:35,299 [DEBUG] (app.py:post:172): POST /records from 172.20.0.28 body=b'{"user_id":"cleyton","game":"fruits","limit":10,"offset":0}'
+2025-08-22 16:18:35,303 [DEBUG] (app.py:post:172): POST /records from 172.20.0.28 body=b'{"user_id":"cleyton","game":"fruits","limit":10,"offset":0}'
+2025-08-22 16:18:35,355 [INFO] (app.py:_log_request:208): 200 POST /records (172.20.0.28) 53.53ms
+2025-08-22 16:18:35,358 [INFO] (app.py:_log_request:208): 200 POST /records (172.20.0.28) 59.15ms
+2025-08-22 16:18:40,911 [DEBUG] (app.py:post:69): RecordHandler POST body: fruits
+2025-08-22 16:18:41,007 [INFO] (app.py:_log_request:208): 200 POST /record (172.20.0.28) 96.76ms
+2025-08-22 16:19:10,221 [DEBUG] (app.py:post:172): POST /records from 172.20.0.28 body=b'{"user_id":"cleyton","game":"fruits","limit":10,"offset":0}'
+2025-08-22 16:19:10,226 [DEBUG] (app.py:post:172): POST /records from 172.20.0.28 body=b'{"user_id":"cleyton","game":"fruits","limit":10,"offset":0}'
+2025-08-22 16:19:10,232 [INFO] (app.py:_log_request:208): 200 POST /records (172.20.0.28) 13.32ms
+2025-08-22 16:19:10,237 [INFO] (app.py:_log_request:208): 200 POST /records (172.20.0.28) 17.01ms
+2025-08-22 16:20:57,323 [DEBUG] (app.py:post:172): POST /records from 172.20.0.15 body=b'{"user_id":"cleyton","game":"fruits","limit":10,"offset":0}'
+2025-08-22 16:20:57,330 [INFO] (app.py:_log_request:208): 200 POST /records (172.20.0.15) 7.72ms
+2025-08-22 16:20:58,320 [DEBUG] (app.py:post:172): POST /records from 172.20.0.15 body=b'{"user_id":"cleyton","game":"fruits","limit":10,"offset":0}'
+2025-08-22 16:20:58,324 [INFO] (app.py:_log_request:208): 200 POST /records (172.20.0.15) 4.37ms
+2025-08-22 16:21:01,654 [DEBUG] (app.py:post:69): RecordHandler POST body: fruits
+2025-08-22 16:21:01,666 [INFO] (app.py:_log_request:208): 200 POST /record (172.20.0.15) 12.26ms
+2025-08-22 16:21:03,693 [DEBUG] (app.py:post:69): RecordHandler POST body: fruits
+2025-08-22 16:21:03,703 [INFO] (app.py:_log_request:208): 200 POST /record (172.20.0.15) 9.73ms
+2025-08-22 16:21:13,297 [DEBUG] (app.py:post:172): POST /records from 172.20.0.15 body=b'{"user_id":"cleyton","game":"fruits","limit":10,"offset":0}'
+2025-08-22 16:21:13,298 [DEBUG] (app.py:post:172): POST /records from 172.20.0.15 body=b'{"user_id":"cleyton","game":"fruits","limit":10,"offset":0}'
+2025-08-22 16:21:13,394 [INFO] (app.py:_log_request:208): 200 POST /records (172.20.0.15) 114.31ms
+2025-08-22 16:21:13,402 [INFO] (app.py:_log_request:208): 200 POST /records (172.20.0.15) 123.31ms
+2025-08-22 16:21:19,453 [DEBUG] (app.py:post:69): RecordHandler POST body: fruits
+2025-08-22 16:21:19,456 [INFO] (app.py:_log_request:208): 200 POST /record (172.20.0.15) 2.66ms
+2025-08-22 16:21:21,280 [DEBUG] (app.py:post:69): RecordHandler POST body: fruits
+2025-08-22 16:21:21,283 [INFO] (app.py:_log_request:208): 200 POST /record (172.20.0.15) 3.61ms
+2025-08-22 16:21:23,079 [DEBUG] (app.py:post:69): RecordHandler POST body: fruits
+2025-08-22 16:21:23,081 [INFO] (app.py:_log_request:208): 200 POST /record (172.20.0.15) 2.86ms
+2025-08-22 16:21:31,265 [DEBUG] (app.py:post:172): POST /records from 172.20.0.15 body=b'{"user_id":"cleyton","game":"fruits","limit":10,"offset":0}'
+2025-08-22 16:21:31,268 [DEBUG] (app.py:post:172): POST /records from 172.20.0.15 body=b'{"user_id":"cleyton","game":"fruits","limit":10,"offset":0}'
+2025-08-22 16:21:31,285 [INFO] (app.py:_log_request:208): 200 POST /records (172.20.0.15) 17.78ms
+2025-08-22 16:21:31,289 [INFO] (app.py:_log_request:208): 200 POST /records (172.20.0.15) 36.73ms
+2025-08-22 16:21:55,086 [DEBUG] (app.py:post:69): RecordHandler POST body: fruits
+2025-08-22 16:21:55,094 [INFO] (app.py:_log_request:208): 200 POST /record (172.20.0.15) 9.72ms
+2025-08-22 16:22:07,771 [DEBUG] (app.py:post:69): RecordHandler POST body: fruits
+2025-08-22 16:22:07,774 [INFO] (app.py:_log_request:208): 200 POST /record (172.20.0.15) 3.66ms
+2025-08-22 16:22:09,563 [DEBUG] (app.py:post:69): RecordHandler POST body: fruits
+2025-08-22 16:22:09,565 [INFO] (app.py:_log_request:208): 200 POST /record (172.20.0.15) 2.55ms
+2025-08-22 16:22:11,310 [DEBUG] (app.py:post:69): RecordHandler POST body: fruits
+2025-08-22 16:22:11,313 [INFO] (app.py:_log_request:208): 200 POST /record (172.20.0.15) 3.01ms
+2025-08-22 16:24:48,146 [DEBUG] (app.py:post:69): RecordHandler POST body: fruits
+2025-08-22 16:24:48,193 [INFO] (app.py:_log_request:208): 200 POST /record (172.20.0.15) 49.25ms
+2025-08-22 16:25:27,695 [DEBUG] (app.py:post:69): RecordHandler POST body: fruits
+2025-08-22 16:25:27,704 [INFO] (app.py:_log_request:208): 200 POST /record (172.20.0.15) 8.97ms
+2025-08-22 16:25:30,186 [DEBUG] (app.py:post:69): RecordHandler POST body: fruits
+2025-08-22 16:25:30,189 [INFO] (app.py:_log_request:208): 200 POST /record (172.20.0.15) 2.75ms
+2025-08-22 16:25:36,802 [DEBUG] (app.py:post:172): POST /records from 172.20.0.15 body=b'{"user_id":"cleyton","game":"fruits","limit":10,"offset":0}'
+2025-08-22 16:25:36,810 [INFO] (app.py:_log_request:208): 200 POST /records (172.20.0.15) 7.67ms
+2025-08-22 16:25:36,882 [DEBUG] (app.py:post:172): POST /records from 172.20.0.15 body=b'{"user_id":"cleyton","game":"fruits","limit":10,"offset":0}'
+2025-08-22 16:25:36,887 [INFO] (app.py:_log_request:208): 200 POST /records (172.20.0.15) 4.76ms

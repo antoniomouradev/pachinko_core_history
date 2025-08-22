@@ -11,6 +11,7 @@ from redis_connection_async import RedisConnectionAsync
 # ---- NOVO: TTL padrão de 7 dias (em segundos)
 TTL_SECONDS = 42 * 24 * 60 * 60  # 42 days
 
+
 def _now_unix() -> float:
     """Epoch seconds (UTC). Used as sorted-set score for ordering."""
     return time.time()
@@ -22,12 +23,12 @@ def _now_iso_gmt_minus3() -> str:
     return time.strftime("%Y-%m-%d %H:%M:%S", t)
 
 
-def key_record(user_id: str, match_id: str) -> str:
-    return f"record:{user_id}:{match_id}"
+def key_record(user_id: str, game: str, match_id: str) -> str:
+    return f"record:{user_id}:{game}:{match_id}"
 
 
-def key_user_index(user_id: str) -> str:
-    return f"user:{user_id}:records"
+def key_user_index(user_id: str, game: str) -> str:
+    return f"user:{user_id}:{game}:records"
 
 
 def _maybe_json_dump(v: Any) -> str:
@@ -53,6 +54,7 @@ class RecordsService:
     async def upsert(
         user_id: str,
         match_id: str,
+        game: str,
         input_data: Optional[Any] = None,
         output_data: Optional[Any] = None,
     ) -> Dict[str, Any]:
@@ -60,8 +62,8 @@ class RecordsService:
         Also updates the per-user sorted index (ZSET) by the current epoch time.
         """
         r = RedisConnectionAsync.client()
-        rec_key = key_record(user_id, match_id)
-        idx_key = key_user_index(user_id)
+        rec_key = key_record(user_id, game, match_id)
+        idx_key = key_user_index(user_id, game)
 
         updated_at = _now_iso_gmt_minus3()
         score = _now_unix()
@@ -69,6 +71,7 @@ class RecordsService:
         mapping: Dict[str, str] = {
             "user_id": user_id,
             "match_id": match_id,
+            "game": game,
             "updated_at": updated_at,
         }
         if input_data is not None:
@@ -96,9 +99,9 @@ class RecordsService:
         }
 
     @staticmethod
-    async def set_output(user_id: str, match_id: str, output_data: Any) -> Dict[str, Any]:
+    async def set_output(user_id: str, match_id: str, game: str, output_data: Any) -> Dict[str, Any]:
         """Update only output; refresh updated_at and index."""
-        return await RecordsService.upsert(user_id, match_id, input_data=None, output_data=output_data)
+        return await RecordsService.upsert(user_id, match_id, game, input_data=None, output_data=output_data)
 
     @staticmethod
     async def get_one(user_id: str, match_id: str) -> Optional[Dict[str, Any]]:
@@ -118,10 +121,10 @@ class RecordsService:
         }
 
     @staticmethod
-    async def get_recent(user_id: str, limit: int = 10, offset: int = 0) -> List[Dict[str, Any]]:
+    async def get_recent(user_id: str, game: str, limit: int = 10, offset: int = 0) -> List[Dict[str, Any]]:
         """Return most-recent N records for a user, ordered by updated_at desc, with offset and limit."""
         r = RedisConnectionAsync.client()
-        idx_key = key_user_index(user_id)
+        idx_key = key_user_index(user_id, game)
 
         # Sanitize inputs
         limit = max(1, min(limit, 100))
@@ -139,7 +142,7 @@ class RecordsService:
         # Batch fetch via pipeline
         pipe = r.pipeline()
         for mid in match_ids:
-            await pipe.hgetall(key_record(user_id, mid))
+            await pipe.hgetall(key_record(user_id, game, mid))
         raw_list = await pipe.execute()
 
         out: List[Dict[str, Any]] = []
@@ -152,6 +155,7 @@ class RecordsService:
             out.append({
                 "user_id": raw.get("user_id") or user_id,
                 "match_id": raw.get("match_id") or mid,
+                "game": game,
                 "input": _maybe_json_load(raw.get("input")),
                 "output": _maybe_json_load(raw.get("output")),
                 "created_at": raw.get("created_at"),
